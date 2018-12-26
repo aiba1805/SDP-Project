@@ -4,8 +4,8 @@ nav{
 .jumbotron{
   margin:auto 0;
 }
-#country{
-  padding: 60px;
+.row{
+  margin-top: 80px;
 }
 #avatarImg{
   max-width: 500px;
