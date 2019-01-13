@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Аудару бот</title>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="../images/logo.png" width="80" height="40" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="opportunities.html">Возможности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="use.html">Сферы применения</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <!-- Gif Animation-->
+        <div class="d-flex justify-content-around align-items-center row">
+          <video autoplay muted loop id="myVideo">
+            <source src="../assets/bot.mov" type="video/mp4">
+          </video>
+        </div>
+	    </div>
+    </div>
+    <!-- jQuery Snowfall Animation -->
+    <script src="../js/jquery.snowfall.js"></script>
+    <script type="text/javascript">
+      $.snowfall.start({
+        size: {
+          min: 10,
+          max: 20
+        },
+        color: '#000',
+        content: '&#10052;'
+      });
+    </script>
+  </body>
+</html>

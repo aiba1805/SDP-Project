@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Аудару бот</title>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry" charset="utf-8"></script>
+    <script src="../js/map.js"></script>
+  </head>
+  <body>
+     <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="../images/logo.png" width="80" height="40" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opportunities.html">Возможности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="use.html">Сферы использования</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Our Cards -->
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center row">
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Ruslan Yestemessov</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Junior Developer</h6>
+                <p class="card-text">Только начинаю познавать азы программирования. Занимаюсь олимпиадным и web программированием. На данный момент нахожусь в команде по acm программированию</p>
+                <a href="#"><i class="fab fa-google-plus-g" style="font-size: 1.5em; color: Tomato;"></i></a>
+                <a href="#"><i class="fab fa-vk" style="font-size: 1.5em;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Aibek Shulembekov</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Junior Developer</h6>
+                <p class="card-text">Занимаюсь программированием 3 года. Знаю такие языки программирования: python,java,c++,html,css,javascript.Работал преподавателем c++ в компьютерной академии "ШАГ"</p>
+                <a href="#"><i class="fab fa-google-plus-g" style="font-size: 1.5em; color: Tomato;"></i></a>
+                <a href="#"><i class="fab fa-vk" style="font-size: 1.5em;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Google Maps -->
+        <div class="d-flex justify-content-center" id="map-canvas">
+          <div id="map"></div>
+        </div>
+      </div>
+    <script  src="../css/bootstrap/js/bootstrap.js"></script>
+    <!-- jQuery Snowfall Animation -->
+    <script src="../js/jquery.snowfall.js"></script>
+    <script type="text/javascript">
+      $.snowfall.start({
+        size: {
+          min: 10,
+          max: 20
+        },
+        color: '#000',
+        content: '&#10052;'
+      });
+    </script>
+  </body>
+</html>
