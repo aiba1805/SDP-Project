@@ -9,6 +9,7 @@
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
+      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -36,13 +37,17 @@
         </div>
       </nav>
       <div class="container">
+        <!-- Gif Animation-->
         <div class="d-flex justify-content-around align-items-center row">
-          <video autoplay muted loop id="myVideo">
-            <source src="../assets/bot.mov" type="video/mp4">
-          </video>
+          <div class="col">
+            <video autoplay muted loop id="myVideo">
+              <source src="../assets/bot.mov" type="video/mp4">
+            </video>
+          </div>
         </div>
 	    </div>
     </div>
+    <!-- jQuery Snowfall Animation -->
     <script src="../js/jquery.snowfall.js"></script>
     <script type="text/javascript">
       $.snowfall.start({
