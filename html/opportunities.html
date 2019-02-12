@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Аудару бот</title>
-    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="../images/logo.png" width="80" height="40" alt="">
@@ -20,44 +20,95 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Главная</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Main</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="opportunities.html">Возможности</a>
+                <a class="nav-link" href="opportunities.html">Opportunities</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="use.html">Сферы применения</a>
+                <a class="nav-link" href="use.html">Usability</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contacts.html">Contacts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Контакты</a>
+                <a class="nav-link" href="video.html">Tutorial</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <!-- Gif Animation-->
-        <div class="d-flex justify-content-around align-items-center row">
-          <div class="col">
-            <video autoplay muted loop id="myVideo">
-              <source src="../assets/bot.mov" type="video/mp4">
-            </video>
-          </div>
-        </div>
-	    </div>
+    <!-- Gif Animation-->
+    <div class="container main d-flex align-items-center">
+      <div class="d-flex justify-content-center align-items-center row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Need only a Telegram</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Use in any chat</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">From any language</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div class="jumbotron jumboron-fluid">
+                    <h1 class="display-4">Common!</h1>
+                    <p class="lead">You can use our bot absolutely anywhere where there is access to the Internet, you just need either a telegram application or just go to the messenger website</p>
+                    <hr class="my-4">
+                    <p>Telegram has applications for all common operating systems.</p>
+                    <a class="btn btn-outline-primary btn-lg" href="https://telegram.org/" role="button">Learn more</a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="jumbotron jumboron-fluid">
+                    <h1 class="display-4">Conveniently!</h1>
+                    <p class="lead">You can use our bot absolutely in any chat telegram. For example, if you want to write something to a friend. Or you want to write to the conversation of your company some important information in two languages at once</p>
+                    <hr class="my-4">
+                    <p>Use our bot where you need!</p>
+                    <a class="btn btn-outline-primary btn-lg" href="https://core.telegram.org/bots/inline" role="button">Learn more</a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="jumbotron jumboron-fluid">
+                    <h1 class="display-4">For all!</h1>
+                    <p class="lead">Our bot is able to translate into Kazakh language from absolutely any language in the world. This is very useful for
+                    foreigners who want to learn the Kazakh language or communicate with their friends from Kazakhstan. Or, for example, for people who are learning some other language, but their native language is Kazakh, and they want to check whether they have learned one or another word correctly.</p>
+                    <hr class="my-4">
+                    <p>Write in any language, our bot will understand you</p>
+                    <a class="btn btn-outline-primary btn-lg" href="https://translate.google.com/intl/en/about/languages/" role="button">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
     </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-primary">
+        <!-- Footer Elements -->
+        <div class="container">
+          <!-- Grid row-->
+          <div class="d-flex justify-content-center align-items-center row">
+            <!-- Grid column -->
+            <div class="col-12 col-sm-9 col-md-6 col-lg-3 col-xl text-center py-3"><a href="https://t.me/aydarybot">
+              <i class="fab fa-telegram-plane" style="font-size: 3em; color:white;"></i>
+            </a>
+          </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-white mt-2">© 2018 Copyright:DevTeamKz</div>
+        <!-- Copyright -->
+      </footer>
+    <!-- Footer -->
     <!-- jQuery Snowfall Animation -->
-    <script src="../js/jquery.snowfall.js"></script>
-    <script type="text/javascript">
-      $.snowfall.start({
-        size: {
-          min: 10,
-          max: 20
-        },
-        color: '#000',
-        content: '&#10052;'
-      });
-    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
